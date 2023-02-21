@@ -36,8 +36,8 @@
             </div>
 
                 <div class="container">
-
-                    <div class="col-xs-12" v-for="item in col.collection.items" :key="item.id">
+                    <div class="row" style="margin-left: 70px;">
+                    <div class="col-xs-12" v-for="item in col.collection.items" :key="item.id" style="margin: 10px;">
                         <div class="card" style="width: 18rem; margin-left: 2 rem">
                         <div class="card-body">
                             <dl v-for="data in item.data">
@@ -47,6 +47,7 @@
                             <a :href="item.href" class="btn btn-primary">Saber mas</a>
                         </div>
                         </div>
+                    </div>
                     </div>
 
                 </div>
