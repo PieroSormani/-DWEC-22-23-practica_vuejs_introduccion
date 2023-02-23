@@ -36,10 +36,9 @@
             </div>
 
                 <div class="container">
-                    <div class="row" style="margin-left: 70px;">
-                    <div class="col-xs-12" v-for="item in col.collection.items" :key="item.id" style="margin: 10px;">
-                        <div class="card" style="width: 18rem; margin-left: 2 rem">
-                        <div class="card-body">
+                    <div class="row" style="margin-left: 50px;">
+                   <div class="col-md-4 mb-3 card" v-for="item in col.collection.items" :key="item.id">
+                    <div class="container mt-4 mb-3">
                             <dl v-for="data in item.data">
                                 <dt>{{data.prompt}}</dt>
                                 <dd>{{data.value}}</dd>
@@ -47,10 +46,10 @@
                             <a :href="item.href" class="btn btn-primary">Saber mas</a>
                         </div>
                         </div>
+                        </div>
                     </div>
-                    </div>
-
-                </div>
+              
+               
         </div>
         <script type="module" src="./js/script.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
